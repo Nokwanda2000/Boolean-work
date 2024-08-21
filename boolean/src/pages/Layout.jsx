@@ -5,7 +5,7 @@ import Footer from './Footer';
 export default function Layout() {
   return (
     <div>
-      <p>This is the page layout</p>
+      {/* <p>This is the page layout</p> */}
       <Footer/>
       <Navigation/>
       <Outlet/>

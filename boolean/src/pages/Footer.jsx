@@ -7,8 +7,8 @@ export default function Footer() {
         left:"0",
         bottom:'0',
         width:"100%",
-        backgroundColor:"grey",
-        height:"30%"
+        backgroundColor:"darkgreen",
+        height:"9%"
     }}>
       
     </div>
