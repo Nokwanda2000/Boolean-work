@@ -1,0 +1,200 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: color(srgb rgb(245, 169, 169) rgb(178, 236, 178) rgb(167, 167, 233));
+  }
+  
+  .left-section {
+    width: 50%;
+  }
+  
+  .trial-text {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .button-container {
+    display: flex;
+   
+    
+  }
+  
+  .button {
+    height: 40px;
+    width: 150px;
+    background-color: "white";
+    
+   
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  .button2{
+    color: white;
+    background-color: darkgreen;
+    border-radius: 5px;
+    border: #333;
+  }
+  .button:hover {
+    background-color: #effff1;
+  }
+  
+  
+  .right-section {
+    width: 50%;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .contact-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-input:focus, .form-textarea:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-submit {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-submit:hover {
+    background-color: #3e8e41;
+  }
+
+  .movie-card {
+    /* Card container styles */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px; /* adjust the width to your liking */
+    margin: 20px; /* add some margin to separate cards */
+  }
+  
+  .movie-poster {
+    /* Poster image styles */
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .movie-info {
+    /* Info container styles */
+    padding: 20px;
+  }
+  
+  .movie-title {
+    /* Title styles */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .movie-rating {
+    /* Rating styles */
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .movie-genre {
+    /* Genre styles */
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .movie-release-year {
+    /* Release year styles */
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .movie-description {
+    /* Description styles */
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  /* Hover effect */
+  .movie-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+
+
+
+
+
+
+
+  

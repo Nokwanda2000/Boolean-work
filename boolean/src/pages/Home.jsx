@@ -1,53 +1,45 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
 export default function Home() {
+  const [backgroundColor, setBackgroundColor] = useState('');
+
+  useEffect(() => {
+    const randomColor = ["pink", "lightgreen","lightblue"]
+    const randomIndex = Math.floor(Math.random() * randomColor.length)
+    setBackgroundColor(randomColor[randomIndex]);
+  }, []);
+
   return (
-    <>
-    <div style={{
-      display:"flex"
-      
-    }}>
-      <div>
-      <p style={{
-        // marginLeft:"200px",
-        // marginTop:"50px",
-        float:'right'
-      }}>-Free 30 days trial</p>
-     <h1 style={{
-      marginTop:"100px",
-      marginLeft:"40px"
-      
-     }}
-     >The best way <br></br>to showcase <br></br>your project</h1>
-     
-     <p style={{
-      marginRight:"70px"
-
-     }}>Just like a solved puzzle we bring solutions to your project</p>
-
-<button style={{
-  height:"40px",
- 
-  float:"left"
-
-
-
-}}
->Excersises</button>
-
-<button style={{
-   height:"40px",
-   
-}}>TraficLights</button>
-</div>
-
-<div>
-<img style={{
-      marginLeft:"100px"
-     }} src={require("../assets/Games-Puzzles-Depressed-1210983054-removebg-preview.png")}></img>
-</div>
+    <div className="home-container" style={{ backgroundColor }}>
+      <div className="left-section">
+        <p className="trial-text">-Free 30 days trial</p>
+        <h1 className="heading">
+          The best way <br /> to showcase <br /> your project
+        </h1>
+        <p className="description">
+          Just like a solved puzzle we bring solutions to your project
+        </p>
+        <div className="button-container">
+          <button style={{ backgroundColor }} className="button">Excercises</button>
+          <button
+            style={{
+              backgroundColor: "green",
+              border: "none",
+              borderRadius: "5px",
+             
+            }}
+            className="button2"
+          >
+            TraficLights
+          </button>
+        </div>
+      </div>
+      <div className="right-section">
+        <img
+          className="image"
+          src={require("../assets/Games-Puzzles-Depressed-1210983054-removebg-preview.png")}
+        />
+      </div>
     </div>
-    </>
-  )
+  );
 }
- 
