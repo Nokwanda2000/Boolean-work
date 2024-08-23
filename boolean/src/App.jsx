@@ -21,12 +21,17 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/Blogs" element={<Blogs />} />
-          <Route path="TrafficLights" element={<TrafficLights />} />
-          <Route path="NoPage" element={<NoPage />} />
-          <Route path='Contact' element={<Contact/>}></Route>
-          <Route path='Movies' element={<Movies/>}></Route>
-          <Route path='moviespage' element={<Moviespage/>}></Route>
+          <Route path="/TrafficLights" element={<TrafficLights />} />
+        
+          <Route path='/Contact' element={<Contact/>}></Route>
+
+          <Route path='/Movies' >
+            <Route index element={<Movies/>}/>
+            <Route path=":id" element={<Moviespage/>}/>
+          </Route>
         </Route>
+
+          <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
     </>

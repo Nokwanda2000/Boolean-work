@@ -1,44 +1,51 @@
 import React from 'react'
+import MovieCard from '../components/moviecard';
+import { Link } from 'react-router-dom';
+import Movies from "../assets/movies"
+import { useParams } from 'react-router-dom';
 
-import Movie from "../assets/movies"
-export default function Moviespage({movie}) {
-    const data=  {
-        id: 1,
-        title: "The Quantum Paradox",
-        director: "Aria Novak",
-        year: 2023,
-        genre: "Sci-Fi",
-        rating: 8.7,
-        description: "A mind-bending journey through parallel universes as a physicist tries to find her way home.",
-        imageUrl: "https://images.pexels.com/photos/2531237/pexels-photo-2531237.jpeg"
-      }
 
-    
+
+
+export default function Moviespage() {
+    const{id}= useParams();
+     console.log(id)
+   
+  
   return (
+    <>
     <div style={{ width:"100%", height:"100%", display: 'flex',
-        gridTemplateColumns: 'repeat(1, 0fr)',
-        gap: '2px',
-       }} className="movie-card">
+                     border:" 1px solid #ddd",
+                     borderRadius: "10px",
+                     boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+                     gap:"10px",
+                     justifyContent:"center",
+                     padding:"40px"
+      
+       }}  >
         <div>
-             <img src={data.imageUrl} style={{ width:"100%", height:"200px"}}></img>
+             <img src={Movies[id].imageUrl} style={{ width:"100%", height:"500px"}}></img>
         </div>
      
-    <div style={{backgroundColor:"whitesmoke"}} className="movie-info">
+    <div style={{backgroundColor:"whitesmoke", borderRadius:"10px"}} className="movie-info">
      
-        <h2>Movie :{data.id}  {data.title}</h2>
-        <p>Director: Director 1{data.director}</p>
-        <p>Rating:{data.rating}</p>
-        <p>Genre:{data.genre}</p>
-        <p>Released:{data.year}</p>
-       
-        <button>Go back</button>
-        <div className="view-more">
-          <h3>More Information</h3>
+        <h2>Movie :{Movies[id].title}</h2>
+        <p>Director: Director 1{Movies[id].director}</p>
+        <p>Rating:{Movies[id].rating}</p>
+        <p>Genre:{Movies[id].genre}</p>
+        <p>Released:{Movies[id].year}</p>
+       <hr></hr>
+     <Link to=".."  > <button className='btn' style={{color:"white", border:"white", borderRadius:"10px", width:"100px", height:"40px",}}>Go back</button></Link>
+    
+          <h3 style={{fontSize:"48px",
+    fontWeight: "bold",
+    color:"#333"}}>More Information</h3>
           <p>
-          {data.description}
+          {Movies[id].description}
           </p>
-        </div>
+        
       </div>
     </div>
+    </>
   );
 }

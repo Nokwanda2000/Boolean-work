@@ -189,12 +189,73 @@
     transition: all 0.3s ease-in-out;
   }
 
+.btn:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+  background-color: #4CAF50;
+}
 
 
+.btn{
+  background-color: blue;
+}
 
+.traffic-light {
+  position: relative;
+  width: 100px;
+  height: 300px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
+.traffic-light-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.light {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+ 
+  animation: blink 2s infinite;
+}
 
+.traffic-light-red {
+  background-color: #ff0000;
+  animation-delay: 0s;
+}
 
+.traffic-light-yellow {
+  background-color: #ffff00;
+  animation-delay: 2s;
+}
 
-  
+.traffic-light-green {
+  background-color: #00ff00;
+  animation-delay: 4s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

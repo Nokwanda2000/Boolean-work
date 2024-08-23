@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 export default function MovieCard({ movie }) {
   return (
     <div className="movie-card" style={{
@@ -21,7 +21,7 @@ export default function MovieCard({ movie }) {
         <p className="movie-genre">Genre : {movie.genre}</p>
         <p className="movie-release-year">Released: {movie.year}</p>
         <p className="movie-description">Description :{movie.description}</p>
-        <button>Read more</button>
+ <Link to={`${movie.id}`}><button>Read more</button></Link>
       </div>
     </div>
   );

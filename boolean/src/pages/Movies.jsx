@@ -4,7 +4,7 @@ import { json } from 'react-router-dom';
 export default function Movies() {
     const movies = [
         {
-          id: 1,
+          id: 0,
           title: "The Quantum Paradox",
           director: "Aria Novak",
           year: 2023,
@@ -14,7 +14,7 @@ export default function Movies() {
           imageUrl: "https://images.pexels.com/photos/2531237/pexels-photo-2531237.jpeg"
         },
         {
-          id: 2,
+          id: 1,
           title: "Whispers in the Wind",
           director: "Leo Chen",
           year: 2022,
@@ -24,7 +24,7 @@ export default function Movies() {
           imageUrl: "https://images.pexels.com/photos/17615502/pexels-photo-17615502/free-photo-of-chinese-woman-in-traditional-clothes-in-forbidden-city.jpeg"
         },
         {
-          id: 3,
+          id: 2,
           title: "Neon Nights",
           director: "Zoe Rodriguez",
           year: 2024,
@@ -34,7 +34,7 @@ export default function Movies() {
           imageUrl: "https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         },
         {
-          id: 4,
+          id: 3,
           title: "The Last Bookmark",
           director: "Ethan Blackwood",
           year: 2021,
@@ -44,7 +44,7 @@ export default function Movies() {
           imageUrl: "https://images.pexels.com/photos/3494806/pexels-photo-3494806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         },
         {
-          id: 5,
+          id: 4,
           title: "Echoes of Eternity",
           director: "Samantha Lee",
           year: 2025,
@@ -54,7 +54,7 @@ export default function Movies() {
           imageUrl: "https://images.pexels.com/photos/4090177/pexels-photo-4090177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         },
         {
-          id: 6,
+          id: 5,
           title: "The Culinary Canvas",
           director: "Marco Rossi",
           year: 2020,
@@ -64,7 +64,7 @@ export default function Movies() {
           imageUrl: "https://images.pexels.com/photos/3351927/pexels-photo-3351927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         },
         {
-          id: 7,
+          id: 6,
           title: "Pixel Perfect",
           director: "Yuki Tanaka",
           year: 2023,
@@ -74,7 +74,7 @@ export default function Movies() {
           imageUrl: "https://images.pexels.com/photos/3800795/pexels-photo-3800795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         },
         {
-          id: 8,
+          id: 7,
           title: "Shadows of the Past",
           director: "Isabella Cortez",
           year: 2022,
@@ -84,7 +84,7 @@ export default function Movies() {
           imageUrl: "https://images.pexels.com/photos/7319346/pexels-photo-7319346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         },
         {
-          id: 9,
+          id: 8,
           title: "Beyond the Horizon",
           director: "Ahmed Hassan",
           year: 2024,
@@ -94,7 +94,7 @@ export default function Movies() {
           imageUrl: "https://images.pexels.com/photos/5259414/pexels-photo-5259414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         },
         {
-          id: 10,
+          id: 9,
           title: "The Rhythm of Life",
           director: "Grace Okafor",
           year: 2021,
